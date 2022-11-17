@@ -1,0 +1,232 @@
+﻿<Window
+    x:Class="project01.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:project01"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="Калькулятор"
+    Width="800"
+    Height="450"
+    mc:Ignorable="d">
+    <Window.Resources>
+        <Style TargetType="Button">
+            <Setter Property="Background" Value="#C0C781" />
+        </Style>
+    </Window.Resources>
+    <Grid x:Name="Buttons" Margin="18">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="AUTO" />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+
+        <TextBlock
+            x:Name="Display"
+            Grid.ColumnSpan="7"
+            FontSize="52"
+            Foreground="Black"
+            Text="0"
+            TextAlignment="Right" />
+
+        <TextBlock
+            x:Name="Rad"
+            Margin="26,50,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center"
+            FontSize="20"
+            Foreground="Black"
+            Text="" />
+
+        <Button
+            Grid.Row="1"
+            Grid.Column="0"
+            Content="1/x" />
+        <Button
+            Grid.Row="1"
+            Grid.Column="1"
+            Content="(" />
+        <Button
+            Grid.Row="1"
+            Grid.Column="2"
+            Content=")" />
+
+        <Button
+            Grid.Row="1"
+            Grid.Column="3"
+            Background="#C59B76"
+            Content="AC" />
+        <Button
+            Grid.Row="1"
+            Grid.Column="4"
+            Background="#C59B76"
+            Content="e" />
+        <Button
+            Grid.Row="1"
+            Grid.Column="5"
+            Background="#C59B76"
+            Content="%" />
+
+        <Button
+            Grid.Row="2"
+            Grid.Column="1"
+            Content="x²" />
+        <Button
+            Grid.Row="2"
+            Grid.Column="0"
+            Content="xᵞ" />
+        <Button
+            Grid.Row="3"
+            Grid.Column="1"
+            Content="²√x" />
+        <Button
+            Grid.Row="3"
+            Grid.Column="0"
+            Content="ᵞ√x" />
+        <Button
+            x:Name="ln"
+            Grid.Row="4"
+            Grid.Column="0"
+            Content="ln" />
+        <Button
+            x:Name="log10"
+            Grid.Row="4"
+            Grid.Column="1"
+            Content="log₁₀" />
+
+        <Button
+            x:Name="btnRadDeg"
+            Grid.Row="5"
+            Grid.Column="2"
+            Content="Rad" />
+        <Button
+            Grid.Row="5"
+            Grid.Column="1"
+            Content="π" />
+        <Button
+            Grid.Row="5"
+            Grid.Column="0"
+            Content="x!" />
+
+        <Button
+            x:Name="sin"
+            Grid.Row="2"
+            Grid.Column="2"
+            Content="sin" />
+        <Button
+            x:Name="cos"
+            Grid.Row="3"
+            Grid.Column="2"
+            Content="cos" />
+        <Button
+            x:Name="tan"
+            Grid.Row="4"
+            Grid.Column="2"
+            Content="tan" />
+
+        <Button
+            Grid.Row="2"
+            Grid.Column="3"
+            Background="#78BC61"
+            Content="7" />
+        <Button
+            Grid.Row="2"
+            Grid.Column="4"
+            Background="#78BC61"
+            Content="8" />
+        <Button
+            Grid.Row="2"
+            Grid.Column="5"
+            Background="#78BC61"
+            Content="9" />
+        <Button
+            Grid.Row="3"
+            Grid.Column="3"
+            Background="#78BC61"
+            Content="4" />
+        <Button
+            Grid.Row="3"
+            Grid.Column="4"
+            Background="#78BC61"
+            Content="5" />
+        <Button
+            Grid.Row="3"
+            Grid.Column="5"
+            Background="#78BC61"
+            Content="6" />
+        <Button
+            Grid.Row="4"
+            Grid.Column="3"
+            Background="#78BC61"
+            Content="1" />
+        <Button
+            Grid.Row="4"
+            Grid.Column="4"
+            Background="#78BC61"
+            Content="2" />
+        <Button
+            Grid.Row="4"
+            Grid.Column="5"
+            Background="#78BC61"
+            Content="3" />
+        <Button
+            Grid.Row="5"
+            Grid.Column="3"
+            Grid.ColumnSpan="2"
+            Background="#78BC61"
+            Content="0" />
+        <Button
+            Grid.Row="5"
+            Grid.Column="5"
+            Background="#78BC61"
+            Content="."
+            FontSize="33" />
+
+        <Button
+            x:Name="buttonMinus"
+            Grid.Row="3"
+            Grid.Column="6"
+            Background="#E9806E"
+            Content="-"
+            FontSize="46" />
+        <Button
+            x:Name="buttonPlus"
+            Grid.Row="4"
+            Grid.Column="6"
+            Background="#E9806E"
+            Content="+"
+            FontSize="33" />
+        <Button
+            Grid.Row="5"
+            Grid.Column="6"
+            Background="#E9806E"
+            Content="="
+            FontSize="33" />
+        <Button
+            x:Name="buttonMult"
+            Grid.Row="2"
+            Grid.Column="6"
+            Background="#E9806E"
+            Content="×"
+            FontSize="33" />
+        <Button
+            x:Name="buttonDiv"
+            Grid.Row="1"
+            Grid.Column="6"
+            Background="#E9806E"
+            Content="÷"
+            FontSize="33" />
+    </Grid>
+</Window>
