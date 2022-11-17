@@ -1,7 +1,4 @@
-﻿using System;
-using System.Linq;
-
-namespace _11._117
+﻿namespace _11._117
 {
     class Program
     {

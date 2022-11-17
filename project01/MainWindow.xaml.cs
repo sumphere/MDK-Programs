@@ -1,19 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Data;
-using System.Linq;
-using System.Text;
 using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace project01
 {
@@ -27,7 +16,6 @@ namespace project01
 
         private bool XPowYFlag = false;
         private bool YSqrtXFlag = false;
-        private bool DotFlag = false;
 
         public MainWindow()
         {
@@ -54,31 +42,22 @@ namespace project01
 
                     case "AC":
                         Display.Text = "0";
-
-                        DotFlag = false;
+                        ResetFlags();
                         break;
 
                     case "=":
                         Result();
-
-                        DotFlag = false;
                         break;
 
                     case "+":
                     case "-":
-                    case "÷":
+                    case "/":
+                    case "*":
                         if (!CheckFormat())
                             Display.Text += content;
                         break;
-                    case "×":
-                        if (!CheckFormat())
-                            Display.Text += "*";
-                        break;
                     case ".":
-                        if (!DotFlag)
-                            Display.Text += ".";
-
-                        DotFlag = true;
+                        Display.Text += ".";
                         break;
 
                     case "%":
@@ -100,7 +79,6 @@ namespace project01
                     case "xᵞ":
                         ResetFlags();
                         XPowYFlag = true;
-
                         saveA = Convert.ToDouble(Display.Text);
                         Display.Text = "";
                         break;
@@ -111,7 +89,6 @@ namespace project01
                     case "ᵞ√x":
                         ResetFlags();
                         YSqrtXFlag = true;
-
                         saveA = Convert.ToDouble(Display.Text);
                         Display.Text = "";
                         break;

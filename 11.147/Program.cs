@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace _11._147
+﻿namespace _11._147
 {
     internal class Program
     {
@@ -15,7 +13,7 @@ namespace _11._147
         }
         static void ReverseRangeBetween<T>(List<T> array, int k, int s)
         {
-            int start = k, count = Math.Min(array.Count, s) - (k+1);
+            int start = k, count = Math.Min(array.Count, s) - (k + 1);
             var range = array.GetRange(start, count);
             range.Reverse();
             array.RemoveRange(start, count);

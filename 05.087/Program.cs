@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace _5._87
 {
@@ -11,7 +7,7 @@ namespace _5._87
         static int Sqr(int n)
         {
             var res = 0;
-            for (int i = 1; i <= n; i++) res += 2 * i  - 1;
+            for (int i = 1; i <= n; i++) res += 2 * i - 1;
             return res;
         }
         static void Main(string[] args)

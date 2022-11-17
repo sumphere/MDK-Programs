@@ -18,7 +18,7 @@ namespace _13._27
         {
             var carList = new int[20].Select((v) => RandomCar());
             var averagePrice = carList.Where(v => v["Age"] > 6).Select(v => v["Price"]).Average();
-            
+
             Console.WriteLine($"Средняя стоимость автомобилей старше 6 лет = {averagePrice}");
         }
     }

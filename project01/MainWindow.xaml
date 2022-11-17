@@ -219,14 +219,14 @@
             Grid.Row="2"
             Grid.Column="6"
             Background="#E9806E"
-            Content="×"
+            Content="*"
             FontSize="33" />
         <Button
             x:Name="buttonDiv"
             Grid.Row="1"
             Grid.Column="6"
             Background="#E9806E"
-            Content="÷"
+            Content="/"
             FontSize="33" />
     </Grid>
 </Window>
