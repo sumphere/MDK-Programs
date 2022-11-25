@@ -136,6 +136,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "proc57", "proc57\proc57.csp
 		{5EEC4233-B7DC-4424-A28D-4F58029BE6F2} = {5EEC4233-B7DC-4424-A28D-4F58029BE6F2}
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "minmax27", "minmax27\minmax27.csproj", "{0BA24ADB-1AE4-47E1-B4E2-66BDB050DE44}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "array17", "array17\array17.csproj", "{12FAA1F6-DF25-4DE0-9353-3767E6DC6937}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -402,6 +406,14 @@ Global
 		{BA73A9A8-A68E-4B50-B4BF-21C9D86B96AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BA73A9A8-A68E-4B50-B4BF-21C9D86B96AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BA73A9A8-A68E-4B50-B4BF-21C9D86B96AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0BA24ADB-1AE4-47E1-B4E2-66BDB050DE44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BA24ADB-1AE4-47E1-B4E2-66BDB050DE44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BA24ADB-1AE4-47E1-B4E2-66BDB050DE44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BA24ADB-1AE4-47E1-B4E2-66BDB050DE44}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12FAA1F6-DF25-4DE0-9353-3767E6DC6937}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12FAA1F6-DF25-4DE0-9353-3767E6DC6937}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12FAA1F6-DF25-4DE0-9353-3767E6DC6937}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12FAA1F6-DF25-4DE0-9353-3767E6DC6937}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
